@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FD8B01"
+    tools:context=".InternetActive">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="300dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="428dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="1dp"
+        android:ems="10"
+        android:hint="@string/urlusing"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/accepturl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/accepturl"
+        android:layout_width="153dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="1dp"
+        android:backgroundTint="#0465F4"
+        android:text="@string/urlgoing"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editText"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <WebView
+        android:id="@+id/weburl"
+        android:layout_width="408dp"
+        android:layout_height="406dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="76dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
